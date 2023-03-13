@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+    border: none;
+    height: Calc(100vh - 110px);
+    background:  #1e1e1e ;
+    border-radius: 12px;
+}
+
+.container .div-grid{
+    display: grid;
+    grid-template-columns: 60% 40% ;
+    gap: 2vh;
+    height: 98%;
+    margin: 2%;
+    border-radius: 12px;
+}
+
+.container .div-grid .div-inside {
+    background-color: #252526
+    ;
+    height:100% ;
+    width:100% ;
+}
+
+.container .div-grid .div-inside button {
+    font-size: medium;
+    border: none;
+    border-radius: 6px;
+    width: 90%;
+    height: 16%;
+    margin: 5%;
+    background-color: rgba(228, 133, 49, 0.915); 
+    color: white;
+}
+
+.container .div-grid .div-inside button:hover {
+    background-color: rgb(167, 102, 45);  
+    transition: background-color 0.2s linear;
+}
